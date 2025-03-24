@@ -162,7 +162,7 @@ affirmations = [
     "You are the 1, and don’t let anyone tell you otherwise!🎆"  
 ]
 
-st.title("🌼 Sunshine in a Button 🌼")
+st.title("Sunshine in a Button 🌼")
 if st.button("✨ CLICK FOR A SURPRISE ✨", key="big_button"):
     st.write(f"🌸 {random.choice(affirmations)} 🌸")
 
