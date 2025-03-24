@@ -82,13 +82,13 @@ projects = [
     {
         "title": "🧠 Brain Tumor Detection",
         "desc": "An AI-powered second opinion for MRI scans! This deep learning model analyzes brain scans to detect tumors with high accuracy. Built using Convolutional Neural Networks (CNN), it helps in early diagnosis, making healthcare more efficient and accessible.",
-        "tech": "TensorFlow, OpenCV, CNN",
+        "tech": "Pytorch, OpenCV, CNN",
         "img": img1,
     },
     {
         "title": "🎨 AirBrush: Virtual Painter",
         "desc": "Who needs a canvas when you have the air? This project lets you draw and erase with just hand gestures using OpenCV and MediaPipe. Whether you want to doodle or sketch mid-air, AirBrush transforms your movements into creative strokes!",
-        "tech": "Python, OpenCV, MediaPipe",
+        "tech": "Python, OpenCV, MediaPipe, numpy",
         "img": img2,
     },
     {
