@@ -164,6 +164,6 @@ affirmations = [
 
 st.title("Sunshine in a Button 🌼")
 if st.button("✨ CLICK FOR A SURPRISE ✨", key="big_button"):
-    st.write(f"🌸 {random.choice(affirmations)} 🌸")
+    st.write(f"{random.choice(affirmations)}")
 
 #the end cuties 
