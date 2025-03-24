@@ -73,9 +73,9 @@ st.markdown("<hr style='border:2px solid black'>", unsafe_allow_html=True)
 st.markdown("## 🏆 Cool Projects I've Built")
             
 # Image paths (Ensure images are in the same folder or provide correct paths)
-img1 = "C:/devdev/Vin's_portfolio/brain.jpeg"  # Replace with actual image path
-img2 = "C:/devdev/Vin's_portfolio/air.jpeg"  # Replace with actual image path
-img3 = "C:/devdev/Vin's_portfolio/rev.png"  # Replace with actual image path
+img1 = "brain.jpeg"  # Replace with actual image path
+img2 = "air.jpeg"  # Replace with actual image path
+img3 = "rev.png"  # Replace with actual image path
 
 # Creating a structured table layout using Markdown + Columns
 projects = [
