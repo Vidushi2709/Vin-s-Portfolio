@@ -1,6 +1,7 @@
 import streamlit as st  
 import pandas as pd 
 import random
+import base64
 
 st.set_page_config(page_title="Vin's Portfolio", page_icon="🚀", layout="wide")
 
@@ -9,6 +10,27 @@ st.markdown(
     "<h1 style='text-align: center; color: #A020F0;'>Hey! I am Vidushi</h1>", 
     unsafe_allow_html=True
 )
+def get_base64_of_bin_file(bin_file_path):
+    with open(bin_file_path, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+def set_background(image_path):
+    base64_img = get_base64_of_bin_file(image_path)
+    css = f"""
+    <style>
+    .stApp {{
+        background-image: url("data:image/png;base64,{base64_img}");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }}
+    </style>
+    """
+    st.markdown(css, unsafe_allow_html=True)
+
+# Use your image file path here (relative or full path)
+set_background(r"C:/devdev/Vin's_portfolio/One step forward and two steps back.png")
 
 st.subheader("🧠 Building neural networks and hoping they don’t ghost me after a few epochs 🤖")
 
