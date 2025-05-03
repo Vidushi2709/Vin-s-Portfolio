@@ -10,6 +10,7 @@ st.markdown(
     "<h1 style='text-align: center; color: #A020F0;'>Hey! I am Vidushi</h1>", 
     unsafe_allow_html=True
 )
+
 def get_base64_of_bin_file(bin_file_path):
     with open(bin_file_path, 'rb') as f:
         data = f.read()
@@ -29,7 +30,6 @@ def set_background(image_path):
     """
     st.markdown(css, unsafe_allow_html=True)
 
-# Use your image file path here (relative or full path)
 set_background("bacckground.png")
 
 st.subheader("🧠 Building neural networks and hoping they don’t ghost me after a few epochs 🤖")
