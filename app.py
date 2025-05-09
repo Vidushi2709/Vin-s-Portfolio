@@ -56,7 +56,9 @@ with col2:
 st.divider()
 st.markdown("<hr style='border:2px solid black'>", unsafe_allow_html=True)
 
-st.markdown("## 🚀 SKILLs ")
+st.markdown("""
+    <h2 style='font-family: "Courier New", monospace;'>🚀 <b>SKILLS</b></h2>
+""", unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)  # Two-column layout
 
@@ -70,7 +72,7 @@ st.markdown("---")
 with col2:
     st.markdown("### 🤖 **MACHINE LEARNING AND AI**")
     st.markdown("- TensorFlow, PyTorch, OpenCV")
-    st.markdown("- MediaPipe, Kalman Filters, HMM")
+    st.markdown("- Transformers, Fine-tuning LLMs")
     st.markdown("- Model Training & Optimization")
 
 st.markdown("<br>", unsafe_allow_html=True)
@@ -92,8 +94,10 @@ with col4:
 
 st.markdown("<hr style='border:2px solid black'>", unsafe_allow_html=True)
 
-st.markdown("## 🏆 Cool Projects I've Built")
-            
+st.markdown("""
+    <h2 style='font-family: "Courier New", monospace;'>🚀 <b>PROJECTS</b></h2>
+""", unsafe_allow_html=True)
+
 # Image paths (Ensure images are in the same folder or provide correct paths)
 img1 = "brain.jpeg"  # Replace with actual image path
 img2 = "air.jpeg"  # Replace with actual image path
