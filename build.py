@@ -6,6 +6,7 @@ import smtplib
 from email.message import EmailMessage
 from dotenv import load_dotenv
 import os
+
 load_dotenv()
 
 
@@ -216,16 +217,41 @@ with st.form(key='contact_form'):
         else:
             st.error("Failed to send your message. Please try again later.")
 
-# Footer contact info
 st.markdown("""
 <hr style="margin-top: 30px; margin-bottom: 20px;">
 
-<div style='text-align: center; font-size: 18px'>
-    <p>Feel free to reach out for collaborations, projects, or just to say hello! 😊</p>
-    📧 <a href="mailto:vidushianand09@gmail.com">vidushianand09@gmail.com</a> <br>
-    🔗 <a href="https://www.linkedin.com/in/vidushi-anand-49420928a/" target="_blank">LinkedIn</a> <br>
-    🐙 <a href="https://github.com/Vidushi2709" target="_blank">GitHub</a>
+<div style='text-align: center; font-size: 22px;'>
+    <p style="font-size: 24px; font-weight: bold;">Feel free to reach out for collaborations, projects, or just to say hello! 😊</p>
 </div>
+
+<!-- Buttons for GitHub, LinkedIn, and Email -->
+<div style='text-align: center;'>
+    <a href="mailto:vidushianand09@gmail.com" target="_blank">
+        <button style="background-color: #000; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 10px; border-radius: 30px; cursor: pointer; animation: sparkle 1.5s infinite;">
+            📧 Email
+        </button>
+    </a>
+    <a href="https://www.linkedin.com/in/vidushi-anand-49420928a/" target="_blank">
+        <button style="background-color: #0000; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 10px; border-radius: 30px; cursor: pointer; animation: sparkle 1.5s infinite;">
+            🔗 LinkedIn
+        </button>
+    </a>
+    <a href="https://github.com/Vidushi2709" target="_blank">
+        <button style="background-color: #0000; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 10px; border-radius: 30px; cursor: pointer; animation: sparkle 1.5s infinite;">
+            🐙 GitHub
+        </button>
+    </a>
+</div>
+
+<style>
+@keyframes sparkle {
+    0% { box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff; }
+    25% { box-shadow: 0 0 5px #ff6, 0 0 10px #ff6, 0 0 15px #ff6; }
+    50% { box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff; }
+    75% { box-shadow: 0 0 5px #f0f, 0 0 10px #f0f, 0 0 15px #f0f; }
+    100% { box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff; }
+}
+</style>
 """, unsafe_allow_html=True)
 
 
