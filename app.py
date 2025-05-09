@@ -30,11 +30,7 @@ def set_background(image_path):
     """
     st.markdown(css, unsafe_allow_html=True)
 
-set_background("bacckground.png")
-
-import streamlit as st
-
-st.markdown('<p style="color:black;">This is black text</p>', unsafe_allow_html=True)
+set_background("back.jpg")
 
 st.subheader("🧠 Building neural networks and hoping they don’t ghost me after a few epochs 🤖")
 
